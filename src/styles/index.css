@@ -1,0 +1,74 @@
+body a {
+
+  color: black
+}
+
+div.wrap {
+
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin: 0 auto;
+  background-color: cornsilk;
+  min-height: 100vh;
+
+}
+
+/* SEKCJA HEAER */
+
+header {
+
+  height: 30vh;
+  background-color: cyan;
+  position: relative;
+  overflow: hidden;
+}
+
+header img {
+
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+
+}
+
+/* Sekcja SECTION */
+.wrap>section {
+
+  display: flex;
+  flex-grow: 1;
+
+}
+
+section> :nth-child(1) {
+
+  min-width: 15%;
+  background-color: chartreuse;
+  text-decoration: none;
+}
+
+section> :nth-child(1) a {
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+section> :nth-child(2) {
+
+  flex-grow: 1;
+  background-color: white;
+}
+
+
+/* SEKCJA FOOTER */
+
+footer {
+
+  height: 20vh;
+  background-color: brown;
+}
